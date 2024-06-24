@@ -20,7 +20,7 @@ public class OrderBusiness {
     public void create(OrderCreateRO ro) {
         Order order = new Order();
         order.setUserId(ro.getUserId());
-        int id = orderService.create(order);
+        orderService.create(order);
         OrderItem orderItem = new OrderItem();
         orderItem.setOrderId(order.getId());
         orderItem.setItemName(ro.getItemName());

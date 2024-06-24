@@ -1,0 +1,11 @@
+### 创建
+POST http://localhost:8080/order/create
+Content-Type: application/json
+
+{
+  {
+    "userId": 1,
+    "itemName": "试试"
+  }
+
+}
