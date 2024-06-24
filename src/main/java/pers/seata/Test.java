@@ -38,4 +38,8 @@ public class Test {
      */
 
 
+    /**
+     * AbstractNettyRemotingClient.ClientHandler # userEventTriggered 定时发送心跳包
+     */
+
 }
