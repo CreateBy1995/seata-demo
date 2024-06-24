@@ -4,8 +4,8 @@
 
 
 
-    <insert id="create" parameterType="pers.seata.dao.domain.Order">
-        INSERT INTO order(user_id) VALUES (#{userId})
+    <insert id="create"  useGeneratedKeys="true" keyProperty="id"  parameterType="pers.seata.dao.domain.Order">
+        INSERT INTO `order`(user_id) VALUES (#{userId})
     </insert>
 
 </mapper>

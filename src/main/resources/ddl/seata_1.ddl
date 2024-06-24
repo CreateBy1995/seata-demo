@@ -1,13 +1,13 @@
 create table `order`
 (
-    id      bigint not null
+    id      bigint auto_increment
         primary key,
     user_id bigint null
 );
 
 create table order_item
 (
-    id        bigint      not null
+    id        bigint auto_increment
         primary key,
     order_id  bigint      null,
     item_name varchar(32) null

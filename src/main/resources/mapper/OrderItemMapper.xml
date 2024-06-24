@@ -4,7 +4,7 @@
 
 
 
-    <insert id="create" parameterType="pers.seata.dao.domain.OrderItem">
+    <insert id="create"  useGeneratedKeys="true" keyProperty="id" parameterType="pers.seata.dao.domain.OrderItem">
         INSERT INTO order_item(order_id,item_name) VALUES (#{orderId},#{itemName})
     </insert>
 

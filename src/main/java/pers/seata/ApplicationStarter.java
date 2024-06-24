@@ -7,7 +7,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @Slf4j
-@MapperScan({"pers.sharding.dao.mapper"})
+@MapperScan({"pers.seata.dao.mapper"})
 @SpringBootApplication
 public class ApplicationStarter {
     public static void main(String[] args) {
