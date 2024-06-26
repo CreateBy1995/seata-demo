@@ -275,7 +275,7 @@
 //        Object body = rpcMessage.getBody();
 //        if (body instanceof MessageTypeAware) {
 //            MessageTypeAware messageTypeAware = (MessageTypeAware) body;
-//            final Pair<RemotingProcessor, ExecutorService> pair = this.processorTable.get((int) messageTypeAware.getTypeCode());
+//            final Pair<RemotingProcessor, ExecutorService> pair = this.processorTable.get((int)    messageTypeAware.getTypeCode());
 //            if (pair != null) {
 //                if (pair.getSecond() != null) {
 //                    try {
@@ -320,5 +320,10 @@
 //        }
 //    }
 //
+//    /**
+//     *   TccActionInterceptorHandler#doInvoke TCC核心代理逻辑
+//     *   构造上下文
+//     *   注册分支信息
+//     */
 //
 //}
