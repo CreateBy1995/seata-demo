@@ -1,8 +1,13 @@
 spring:
   profiles:
-    active: at
+    active: files
   application:
     name: springboot-mybatis-seata
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${mysql.url}:3306/seata_1?useSSL=false&useUnicode=true&characterEncoding=UTF8
+    username: ${mysql.username}
+    password: ${mysql.password}
 
 mybatis:
   mapper-locations: classpath:/mapper/*Mapper.xml
@@ -15,3 +20,6 @@ mysql:
   username: root
   password: sunshine
 
+seata:
+  application-id: springboot-mybatis-seata
+  tx-service-group: order_tx_group

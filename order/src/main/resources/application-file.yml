@@ -1,0 +1,5 @@
+seata:
+  config:
+    type: file
+  registry:
+    type: file

@@ -7,5 +7,7 @@ spring:
 seata:
   application-id: springboot-mybatis-seata
   tx-service-group: order_tx_group
-
-
+  config:
+    type: file
+  registry:
+    type: file

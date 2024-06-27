@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${mysql.url}:3306/seata_1?useSSL=false&useUnicode=true&characterEncoding=UTF8
+    username: ${mysql.username}
+    password: ${mysql.password}
+seata:
+  config:
+    type: nacos
+    nacos:
+      server-addr: 121.40.24.147:8848
+      namespace: 5355d136-a5a4-47bf-be02-370ddff192a9
+      group: SEATA_GROUP
+      username: nacos
+      password: nacos
+      dataId: seataServer.properties
+  registry:
+    type: nacos
+    nacos:
+      application: seata-server # seata-server注册到nacos上的服务名称
+      server-addr: 121.40.24.147:8848
+      group : SEATA_GROUP # seata-server注册到nacos上的Group名称
+      namespace: 5355d136-a5a4-47bf-be02-370ddff192a9
+      username: nacos
+      password: nacos
+
