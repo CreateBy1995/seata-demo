@@ -10,7 +10,7 @@ import pers.seata.common.facade.TccActionOne;
 @Slf4j
 @Service
 public class TccOrderBusiness {
-    @Reference
+    @Reference(retries = -1, timeout = 60000, check = false)
     private TccActionOne tccActionOne;
     @Autowired
     private TccActionTwo tccActionTwo;

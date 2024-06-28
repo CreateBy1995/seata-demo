@@ -22,6 +22,13 @@ public class OrderController {
         orderBusiness.create(ro);
     }
 
+    @PostMapping("/createWithoutTx")
+    public void createWithoutTx(@RequestBody OrderCreateRO ro) {
+        orderBusiness.createWithoutTx(ro);
+    }
+
+
+
     @GetMapping("/createByTcc/{param}")
     public void createByTcc(@PathVariable(name = "param") Integer param) {
         tccOrderBusiness.doAction(param);
